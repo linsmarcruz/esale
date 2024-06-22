@@ -12,7 +12,7 @@ Este é um projeto de teste para a aplicação eSale. Ele utiliza PHP 8.1 com o 
   - Docker
   - Docker Compose
    
-## Instruções de Instalação- Clone o Projeto:
+## Instruções de Instalação:
 
 1. **Clone o Projeto:**
    ```bash
