@@ -1,21 +1,30 @@
 # Projeto de Teste para eSale
 Este é um projeto de teste para a aplicação eSale. Ele utiliza PHP 8.1 com o servidor Apache e é configurado para ser executado em um ambiente Docker.
-## Configurações de Ambiente- PHP: Versão 8.1
-- Servidor Web: Apache
-- Ambiente: Docker
+## Configurações de Ambiente
+ - PHP: Versão 8.1
+ - Servidor Web: Apache
+ - Ambiente: Docker
+
+ ## Requisitos
+
+  Para executar este projeto em seu ambiente local, você precisará ter instalado:
+
+  - Docker
+  - Docker Compose
+   
 ## Instruções de Instalação- Clone o Projeto:
 
 1. **Clone o Projeto:**
-
-` git clone https://github.com/linsmarcruz/esale.git `
+   ```bash
+   git clone https://github.com/linsmarcruz/esale.git
 
 2. **Acesse o Diretório do Projeto:**
-
-`cd esale`
+   ```bash
+   cd esale
 
 3. **Suba os Containers:**
-
-`docker-compose up -d`
+   ```bash
+   docker-compose up -d
 
 4. **Acesse a Aplicação:** 
  
