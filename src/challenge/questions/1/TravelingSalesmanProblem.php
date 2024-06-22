@@ -2,12 +2,12 @@
 
 class TravelingSalesmanProblem
 {
-    private $distMatrix;
-    private $numPoints;
-    private $minRoute;
-    private $minDistance;
+    private array $distMatrix;
+    private int $numPoints;
+    private array $minRoute;
+    private int $minDistance;
 
-    public function __construct($distMatrix)
+    public function __construct(array $distMatrix)
     {
         $this->distMatrix = $distMatrix;
         $this->numPoints = count($distMatrix);
@@ -15,16 +15,16 @@ class TravelingSalesmanProblem
         $this->minDistance = PHP_INT_MAX;
     }
 
-    public function findShortestRoute()
+    public function findShortestRoute(): array
     {
         $initialRoute = range(0, $this->numPoints - 1);
         $this->permute($initialRoute, 1);
         return [$this->minRoute, $this->minDistance];
     }
 
-    private function permute($route, $startIndex)
+    private function permute(array $route, int $startIndex): void
     {
-        if ($startIndex == $this->numPoints) {
+        if ($startIndex === $this->numPoints) {
             $this->calculateRouteDistance($route);
             return;
         }
@@ -36,7 +36,7 @@ class TravelingSalesmanProblem
         }
     }
 
-    private function calculateRouteDistance($route)
+    private function calculateRouteDistance(array $route): void
     {
         $totalDistance = 0;
         foreach (range(0, $this->numPoints - 2) as $i) {
@@ -50,7 +50,7 @@ class TravelingSalesmanProblem
         }
     }
 
-    private function swap(&$route, $i, $j)
+    private function swap(array &$route, int $i, int $j): void
     {
         $temp = $route[$i];
         $route[$i] = $route[$j];

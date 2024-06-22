@@ -1,7 +1,8 @@
 <?php
+
 class Inventory
 {
-    private $inventory;
+    private array $inventory;
 
     const OPERATION_ENTRY = 'entrada';
     const OPERATION_EXIT = 'saida';
@@ -11,7 +12,7 @@ class Inventory
         $this->inventory = [];
     }
 
-    public function processOperations($operations)
+    public function processOperations(array $operations): array
     {
         foreach ($operations as $operation) {
             list($type, $product, $quantity) = $operation;
