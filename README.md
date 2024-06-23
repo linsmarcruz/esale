@@ -1,5 +1,5 @@
-# Projeto de Teste para eSale
-Este é um projeto de teste para a aplicação eSale. Ele utiliza PHP 8.1 com o servidor Apache e é configurado para ser executado em um ambiente Docker.
+# Projeto de Teste para eSales
+Este é um projeto de teste para a aplicação eSales. Ele utiliza PHP 8.1 com o servidor Apache e é configurado para ser executado em um ambiente Docker.
 ## Configurações de Ambiente
  - PHP: Versão 8.1
  - Servidor Web: Apache
